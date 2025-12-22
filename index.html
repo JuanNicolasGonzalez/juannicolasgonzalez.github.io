@@ -1,121 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Nicolas Gonzalez - Research</title>
-    <style>
-        body {
-            font-family: Bahnschrift, Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        header {
-            background: #004d99;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #0066cc;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #004d99;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #004d99;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            margin-top: 30px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juan Nicolas Gonzalez - Research</title>
+
+<style>
+/* ---------- Base ---------- */
+body {
+  font-family: Bahnschrift, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background: #004d99;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #0066cc;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #004d99;
+}
+
+/* ---------- Tabs ---------- */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0 25px 0;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  border: 1px solid #0066cc;
+  background: #fff;
+  color: #0066cc;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tab-btn:hover {
+  background: #eaf3ff;
+}
+
+.tab-btn.active {
+  background: #0066cc;
+  color: #fff;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #004d99;
+  color: #fff;
+  margin-top: 30px;
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Juan Nicolas Gonzalez</h1>
-        <p>Engineer Integrating Transportation and Energy with Data Science. #Energy #Mobility #TransportResearch #Engineering #DataAnalysis #DataScienceMobility</p>
-        <p><a href="https://orcid.org/0000-0001-8589-803X" target="_blank" style="color: #fff; text-decoration: underline;">ORCID</a> | <a href="https://scholar.google.com/citations?user=aHmw9_YAAAAJ&hl=es" target="_blank" style="color: #fff; text-decoration: underline;">Google Scholar Profile</a> | <a href="https://www.linkedin.com/in/juan-nicolas-gonzalez-4b9907111" target="_blank" style="color: #fff; text-decoration: underline;">LinkedIn Profile</a></p>
-    </header>
 
-    <nav>
-        <a href="#profile">Profile</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-    </nav>
+<header>
+  <h1>Juan Nicolas Gonzalez</h1>
+  <p>Engineer Integrating Transportation and Energy with Data Science</p>
+  <p>
+    <a href="https://orcid.org/0000-0001-8589-803X" target="_blank" style="color:#fff;">ORCID</a> |
+    <a href="https://scholar.google.com/citations?user=aHmw9_YAAAAJ&hl=es" target="_blank" style="color:#fff;">Google Scholar</a> |
+    <a href="https://www.linkedin.com/in/juan-nicolas-gonzalez-4b9907111" target="_blank" style="color:#fff;">LinkedIn</a>
+  </p>
+</header>
 
-    <section id="profile">
-        <h2>Profile</h2>
-        <p>Welcome! I am Juan Nicolas Gonzalez, a dedicated researcher focusing on transportation and energy.</p>
-    </section>
+<nav>
+  <a href="#profile">Profile</a>
+  <a href="#projects">Projects</a>
+  <a href="#publications">Publications</a>
+</nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p></p>
-    </section>
+<section id="profile">
+  <h2>Profile</h2>
+  <p>I am a researcher focusing on transportation systems, energy, and data-driven policy analysis.</p>
+</section>
 
-    <section id="publications">
-        <h2>Publications</h2>
-        <h3>2025</h3>
-        <ul>
-            <li> Naranjo, D., <strong>Gonzalez, J. N.</strong>, Garrido, L., Rangel, T., & Vassallo, J. M. (2025). Contribution of new mobility services to achieving key sustainability goals and the role of social trends in fostering their adoption. Transportation Research Interdisciplinary Perspectives, 33(September), 101630. <a href = "https://doi.org/10.1016/j.trip.2025.101630">https://doi.org/10.1016/j.trip.2025.101630</a></li>
-            <li> Shatnawi, I., <strong>Gonzalez, J.N.</strong> & Masoud, N. (2025). Toward AV-CAV deployment in the Kingdom of Saudi Arabia: A readiness assessment based on expert feedback, Research in Transportation Business and Management, 60(April). <a href="https://doi.org/10.1016/j.rtbm.2025.101378" target="_blank">https://doi.org/10.1016/j.rtbm.2025.101378</a>.</li>
-            <li><strong>Gonzalez, J. N.</strong>, Sobrino, N., & Vassallo, J. M. (2025). Considering the city context in weighting sustainability criteria for last-mile logistics solutions. International Journal of Logistics Research and Applications, 1–21. <a href="https://doi.org/10.1080/13675567.2023.2264788" target="_blank">https://doi.org/10.1080/13675567.2023.2264788</a></li>
-        </ul>
-        <h3>2024</h3>
-        <ul>
-            <li>Krombach, J., <strong>Gonzalez, J. N.</strong>, Wittwer, R., Hubrich, S., Baumgart, F., & Gerike, R. (2024). How do German cities translate global sustainability visions into local mobility planning? A quantitative analysis of planners’ perspectives and priorities. Transport Policy, 154(June), 96–106. <a href="https://doi.org/10.1016/j.tranpol.2024.06.003" target="_blank">https://doi.org/10.1016/j.tranpol.2024.06.003</a></li>
-            <li>Guzman, A. F., <strong>Gonzalez, J. N.</strong>, & Alwosheel, A. (2024). Energy efficiency trends in Saudi Arabian commercial aviation before and after COVID-19. Transportation Research Interdisciplinary Perspectives, 26(June), 101170. <a href="https://doi.org/10.1016/j.trip.2024.101170" target="_blank">https://doi.org/10.1016/j.trip.2024.101170</a></li>
-        </ul>
-        <h3>2023</h3>
-        <ul>
-            <li>Guzman, A. F., <strong>Gonzalez, J. N.</strong>, & Alwosheel, A. (2023). Fuel Efficiency in Saudi Arabia’s Aviation Sector: Progress and Future Implications (Issue June). <a href="https://doi.org/10.30573/KS--2023-DP16" target="_blank">https://doi.org/10.30573/KS--2023-DP16</a></li>
-            <li><strong>Gonzalez, J. N.</strong>, Garrido, L., & Vassallo, J. M. (2023). Exploring stakeholders’ perspectives to improve the sustainability of last mile logistics for e-commerce in urban areas. Research in Transportation Business & Management, 49(July 2022), 101005. <a href="https://doi.org/10.1016/j.rtbm.2023.101005" target="_blank">https://doi.org/10.1016/j.rtbm.2023.101005</a></li>
-            <li><strong>Gonzalez, J. N.</strong>, Gomez, J., & Vassallo, J. M. (2023). Are low emission zones and on-street parking management effective in reducing parking demand for most polluting vehicles and promoting greener ones? Transportation Research Part A: Policy and Practice, 176(August), 103813. <a href="https://doi.org/10.1016/j.tra.2023.103813" target="_blank">https://doi.org/10.1016/j.tra.2023.103813</a></li>
-            <li>Royo, B., Politaki, D., <strong>Gonzalez, J. N.</strong>, & Batalla, A. (2023). Digital Twin opportunities and benefits in last-mile logistics for Madrid value case. Transportation Research Procedia, 72, 1693–1699. <a href="https://doi.org/10.1016/j.trpro.2023.11.642" target="_blank">https://doi.org/10.1016/j.trpro.2023.11.642</a></li>
-            <li>Sobrino, N., <strong>Gonzalez, J. N.</strong>, Vassallo, J. M., & Baeza, M. de los A. (2023). Regulation of shared electric kick scooters in urban areas: Key drivers from expert stakeholders. Transport Policy, 134(February), 1–18. <a href="https://doi.org/10.1016/j.tranpol.2023.02.009" target="_blank">https://doi.org/10.1016/j.tranpol.2023.02.009</a></li>
-        </ul>
-        <h3>2022</h3>
-        <ul>
-            <li>Rangel, T., <strong>Gonzalez, J. N.</strong>, Gomez, J., Romero, F., & Vassallo, J. M. (2022). Exploring ride-hailing fares: an empirical analysis of the case of Madrid. Transportation, 49(2), 373–393. <a href="https://doi.org/10.1007/s11116-021-10180-w" target="_blank">https://doi.org/10.1007/s11116-021-10180-w</a></li>
-            <li><strong>Gonzalez, J. N.</strong>, Camarero-Orive, A., González-Cancelas, N., & Guzman, A. F. (2022). Impact of the COVID-19 pandemic on road freight transportation – A Colombian case study. Research in Transportation Business & Management, 43, 100802. <a href="https://doi.org/10.1016/j.rtbm.2022.100802" target="_blank">https://doi.org/10.1016/j.rtbm.2022.100802</a></li>
-            <li><strong>Gonzalez, J. N.</strong>, Gomez, J., & Vassallo, J. M. (2022). Do urban parking restrictions and Low Emission Zones encourage a greener mobility? Transportation Research Part D: Transport and Environment, 107(May), 103319. <a href="https://doi.org/10.1016/j.trd.2022.103319" target="_blank">https://doi.org/10.1016/j.trd.2022.103319</a></li>
-            <li>Royo, B., Politaki, D., <strong>Gonzalez, J. N.</strong>, & Batalla, A. (2022). An Emerging and Innovation Transport Solution: Towards Transforming Parking Lot to Urban Consolidation Centre: Madrid Living Lab. In E. G. Nathanail, N. Gavanas, & G. Adamos (Eds.), Smart Energy for Smart Transport. Proceedings of the 6th Conference on Sustainable Urban Mobility, CSUM2022, August 31–September 2, 2022, Skiathos Island, Greece. Springer Nature Switzerland. <a href="https://doi.org/10.1007/978-3-031-23721-8" target="_blank">https://doi.org/10.1007/978-3-031-23721-8</a></li>
-        </ul>
-        <h3>2021</h3>
-        <ul>
-            <li><strong>Gonzalez, J. N.</strong>, Perez-Doval, J., Gomez, J., & Vassallo, J. M. (2021). What impact do private vehicle restrictions in urban areas have on car ownership? Empirical evidence from the city of Madrid. Cities, 116(May), 103301. <a href="https://doi.org/10.1016/j.cities.2021.103301" target="_blank">https://doi.org/10.1016/j.cities.2021.103301</a></li>
-        </ul>
-    </section>
+<section id="projects">
+  <h2>Projects</h2>
+  <p></p>
+</section>
 
-    <footer style="position: relative; margin-top: 30px;">
-        <p>&copy; 2025 Juan Nicolas Gonzalez. All rights reserved.</p>
-    </footer>
+<section id="publications">
+  <h2>Publications</h2>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="journals">Journal papers</button>
+    <button class="tab-btn" data-tab="discussion">Discussion papers</button>
+  </div>
+
+  <!-- Journal papers -->
+  <div id="journals" class="tab-panel active">
+    <h3>2025</h3>
+    <ul>
+      <li>
+        Naranjo, D., <strong>Gonzalez, J. N.</strong>, Garrido, L., Rangel, T., & Vassallo, J. M. (2025).
+        Contribution of new mobility services to achieving key sustainability goals.
+        <em>Transportation Research Interdisciplinary Perspectives</em>.
+        <a href="https://doi.org/10.1016/j.trip.2025.101630" target="_blank">DOI</a>
+      </li>
+      <li>
+        Shatnawi, I., <strong>Gonzalez, J. N.</strong>, & Masoud, N. (2025).
+        Toward AV-CAV deployment in Saudi Arabia.
+        <em>Research in Transportation Business & Management</em>.
+        <a href="https://doi.org/10.1016/j.rtbm.2025.101378" target="_blank">DOI</a>
+      </li>
+    </ul>
+
+    <h3>2024</h3>
+    <ul>
+      <li>
+        Krombach, J., <strong>Gonzalez, J. N.</strong>, et al. (2024).
+        Global sustainability visions into local mobility planning.
+        <em>Transport Policy</em>.
+        <a href="https://doi.org/10.1016/j.tranpol.2024.06.003" target="_blank">DOI</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Discussion papers -->
+  <div id="discussion" class="tab-panel">
+    <h3>2023</h3>
+    <ul>
+      <li>
+        Guzman, A. F., <strong>Gonzalez, J. N.</strong>, & Alwosheel, A. (2023).
+        Fuel Efficiency in Saudi Arabia’s Aviation Sector.
+        <em>Discussion Paper</em>.
+        <a href="https://doi.org/10.30573/KS--2023-DP16" target="_blank">DOI</a>
+      </li>
+    </ul>
+  </div>
+
+</section>
+
+<footer>
+  <p>&copy; 2025 Juan Nicolas Gonzalez. All rights reserved.</p>
+</footer>
+
+<script>
+/* ---------- Tab logic ---------- */
+const buttons = document.querySelectorAll('.tab-btn');
+const panels = document.querySelectorAll('.tab-panel');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    panels.forEach(p => p.classList.remove('active'));
+
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+  });
+});
+</script>
+
 </body>
 </html>
