@@ -13,7 +13,12 @@
 <meta property="og:title" content="Juan Nicolas Gonzalez - Research">
 <meta property="og:description" content="Engineer integrating transportation and energy with data science. Research profile and publications.">
 <meta property="og:url" content="https://juannicolasgonzalez.github.io/">
+<meta property="og:image" content="https://juannicolasgonzalez.github.io/images/portrait-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Portrait of Juan Nicolas Gonzalez">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://juannicolasgonzalez.github.io/images/portrait-og.jpg">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23004d99'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='bold' fill='%23fff' text-anchor='middle'%3EJN%3C/text%3E%3C/svg%3E">
 
@@ -29,14 +34,89 @@ body {
 }
 
 header {
-  background: #004d99;
+  background: linear-gradient(135deg, #003a75 0%, #004d99 55%, #0066cc 100%);
   color: #fff;
-  padding: 15px 20px;
-  text-align: center;
+  padding: 40px 20px;
 }
 
-header a {
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.portrait {
+  display: block;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.hero-text h1 {
+  margin: 0 0 6px;
+  font-size: 2.4rem;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+}
+
+.tagline {
+  margin: 0 0 18px;
+  font-size: 1.15rem;
+  color: #dbe9ff;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+}
+
+.profile-links a {
   color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding: 6px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  transition: 0.2s;
+}
+
+.profile-links a:hover,
+.profile-links a:focus-visible {
+  background: #fff;
+  color: #004d99;
+}
+
+@media (max-width: 640px) {
+  header {
+    padding: 32px 16px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .portrait {
+    width: 150px;
+    height: 150px;
+  }
+  .hero-text h1 {
+    font-size: 1.9rem;
+  }
+  .profile-links {
+    justify-content: center;
+  }
+  section {
+    margin: 16px 12px;
+  }
 }
 
 nav {
@@ -135,13 +215,21 @@ footer {
 <body>
 
 <header>
-  <h1>Juan Nicolas Gonzalez</h1>
-  <p>Engineer Integrating Transportation and Energy with Data Science</p>
-  <p>
-    <a href="https://orcid.org/0000-0001-8589-803X" target="_blank" rel="noopener">ORCID</a> |
-    <a href="https://scholar.google.com/citations?user=aHmw9_YAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> |
-    <a href="https://www.linkedin.com/in/juan-nicolas-gonzalez-4b9907111" target="_blank" rel="noopener">LinkedIn</a>
-  </p>
+  <div class="hero">
+    <picture>
+      <source srcset="images/portrait.webp" type="image/webp">
+      <img class="portrait" src="images/portrait.jpg" width="200" height="200" alt="Portrait of Juan Nicolas Gonzalez">
+    </picture>
+    <div class="hero-text">
+      <h1>Juan Nicolas Gonzalez</h1>
+      <p class="tagline">Engineer Integrating Transportation and Energy with Data Science</p>
+      <p class="profile-links">
+        <a href="https://orcid.org/0000-0001-8589-803X" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=aHmw9_YAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/juan-nicolas-gonzalez-4b9907111" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </div>
 </header>
 
 <nav>
