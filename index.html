@@ -98,6 +98,61 @@ header {
   margin: 0;
 }
 
+/* ---------- Teaching ---------- */
+#teaching h3 {
+  margin: 24px 0 8px;
+  color: #333;
+}
+
+.teach-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.teach-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 0;
+  margin: 0;
+  border-bottom: 1px solid #e6edf5;
+}
+
+.teach-list li:last-child {
+  border-bottom: none;
+}
+
+.teach-main strong {
+  display: block;
+  color: #222;
+}
+
+.teach-main span {
+  display: block;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.years {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #004d99;
+  background: #eaf3ff;
+  border-radius: 999px;
+  padding: 3px 12px;
+}
+
+@media (max-width: 640px) {
+  .teach-list li {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
 .fact a {
   color: #004d99;
 }
@@ -274,6 +329,7 @@ footer {
   <a href="#profile">Profile</a>
   <a href="#interests">Interests</a>
   <a href="#publications">Publications</a>
+  <a href="#teaching">Teaching</a>
 </nav>
 
 <main>
@@ -387,6 +443,53 @@ footer {
     </ul>
   </div>
 
+</section>
+
+<section id="teaching">
+  <h2>Teaching</h2>
+
+  <h3>Courses taught</h3>
+  <ul class="teach-list">
+    <li>
+      <div class="teach-main">
+        <strong>Financing of Infrastructure and Services</strong>
+        <span>Master’s Degree in Civil Engineering (Ingeniería de Caminos, Canales y Puertos)</span>
+      </div>
+      <span class="years">2020–2022</span>
+    </li>
+    <li>
+      <div class="teach-main">
+        <strong>Transport</strong>
+        <span>Bachelor’s Degree in Civil and Territorial Engineering and Bachelor’s Degree in Civil Engineering</span>
+      </div>
+      <span class="years">2020–2022</span>
+    </li>
+    <li>
+      <div class="teach-main">
+        <strong>Logistics and Physical Distribution</strong>
+        <span>Double Bachelor’s Degree in Civil and Territorial Engineering and Business Administration</span>
+      </div>
+      <span class="years">2021–2022 · 2023–2024</span>
+    </li>
+  </ul>
+
+  <h3>Continuing education and teaching innovation</h3>
+  <ul class="teach-list">
+    <li>
+      <div class="teach-main">
+        <strong>New Shared Mobility Services in Urban Areas</strong>
+        <span>Course instructor at UPM, four editions</span>
+      </div>
+      <span class="years">2022–2024</span>
+    </li>
+    <li>
+      <div class="teach-main">
+        <strong>Peer assessment as a tool to strengthen oral communication, critical thinking and student autonomy in Civil Engineering</strong>
+        <span>Participant, teaching innovation project</span>
+      </div>
+      <span class="years">2022</span>
+    </li>
+  </ul>
 </section>
 
 </main>
